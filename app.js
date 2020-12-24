@@ -9,7 +9,7 @@ const options = document.getElementById('source');
 const validateRadioBtn = () => {
 const radios = document.getElementsByName('title');
 for (let i = 0; i < radios.length; i++) {
-    if (radios[i].checked < 1) {
+    if (!radios[i].checked) {
       alert ('please')     
     }
 }
@@ -18,7 +18,7 @@ for (let i = 0; i < radios.length; i++) {
 const validateCheckbox = () => {
   const checkboxes = document.getElementsByName('flavour');
   for (let i = 0; i < checkboxes.length; i++) {
-      if (checkboxes[i].checked < 1) {
+      if (!checkboxes[i].checked) {
         alert ('please select at least one')     
       }
   }
