@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section>
+<h1>Cake Factory Questionnaire</h1>
+<form class="form">
+
+<!-- Question 1 -->
+<div class="form_group">
+<h3>Title</h3>
+<div class="radio_btn">
+  <input class="form-check-input" id="title-mr" type="radio" name="title"  value="Mr." />
+  <label for="title-mr">Mr.</label>
+  
+  <input class="form-check-input" id="title-miss" type="radio" name="title" value="Miss." />
+  <label for="title-miss">Mrs.</label>
+ 
+  <input class="form-check-input" id="title-mrs" type="radio" name="title" value="Mrs." />
+  <label for="title-mrs">Mrs.</label>
+ 
+  <input class="form-check-input" id="title-dr" type="radio" name="title" value="Dr." />
+  <label for="title-dr">Dr.</label>
+  <small>Error message</small>
+</div>
+</div>
+        
+  
+<!-- Question 2 -->
+<div class="form_group">
+  <h3><label for="source">How did you hear about Cake Factory?</label></h3>
+  <select class="form-select" id="source" name="source">
+    <option selected disabled value="">Choose...</option>
+    <option value="Twitter">Twitter</option>
+    <option value="Instagram">Instagram</option>
+    <option value="A Friend">A Friend</option>
+    <option value="Other">Other</option>
+  </select>
+  <small>Error Prompt</small>
+</div>
+  
+
+<!-- Question 3 -->
+<div class="form_group">
+<h3>What is your preferred flavour(s) from Cake Factory?</h3>
+<div>
+  <input class="form-check-input" id="chocolate" name="flavour" type="checkbox" value="Chocolate"/>
+  <label for="chocolate">Chocolate</label>
+</div> 
+<div>
+  <input class="form-check-input" id="red-velvet" name="flavour" type="checkbox" value="Red Velvet"/>
+  <label for="red-velvet">Red Velvet</label>
+</div>
+<div>
+  <input class="form-check-input" id="carrot" name="flavour" type="checkbox" value="Carrot"/>
+  <label for="carrot">Carrot</label>
+</div>
+<div>
+  <input class="form-check-input" id="cheese" name="flavour" type="checkbox" value="Cheese"/>
+  <label for="carrot">Cheese</label>
+</div>  
+<small>Error Prompt</small>  
+</div>
+
+
+<!-- Question 4 -->
+<div class="form_group">
+  <h3><label for="email">Email Address</label></h3>
+  <input class="form-control email" id="email" name="email" type="email"/>
+  <small>Error Prompt</small>
+</div>
+
+<button class="form_button" type="submit">SUBMIT</button>
+</form>
+
+<!-- JSON output -->
+<div class="results">
+  <h2>Form Submitted Successfully!!</h2>
+  <pre class="results_output">
+
+  </pre>
+  <a href="index.html" class="form_button">HOME</a>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>

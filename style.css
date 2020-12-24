@@ -1,0 +1,134 @@
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  
+  /* Set up fonts, colors and all that jazz. */
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #231e21;
+    text-rendering: optimizeLegibility;
+    background: #f8f9ff;
+  }
+  
+
+  h1 {
+    text-align: center;
+    margin: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #231e21;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+.form_group {
+  margin: 2rem 0;
+  padding-bottom: 2.2rem;
+  border-bottom: 1px solid #d5d5d5;
+  text-align: left;
+  position: relative;
+}
+
+.form_group div {
+  padding: 10px 0;
+}
+
+.form_group small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form_group.error small {
+  color: #ea2340;
+  font-size: 15px;
+  visibility: visible;
+}
+
+
+.form_button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  background: #231e21;
+  color: #fff;
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.form_button:hover {
+  background: #000;
+}
+
+
+/*Results*/
+  .results {
+    width: 90vw;
+    max-width: 550px;
+    margin: 8vh auto;
+    animation: fadeIn ease-in-out 0.8s;
+  }
+
+  
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+  .results h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 1rem;
+    color: #50c878;
+  }
+  
+  .results_output {
+    margin-top: 16px;
+    margin-top: 1rem;
+    padding: 8px 16px;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    overflow-x: scroll;
+    visibility: visible;
+  }
+
+  .results a {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .results a:hover {
+    color: #fff;
+  }
+
+
+@media screen and (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
