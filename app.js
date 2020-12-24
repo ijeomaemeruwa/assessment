@@ -6,35 +6,11 @@ const options = document.getElementById('source');
 
 
 
-const validateRadioBtn = () => {
-const radios = document.getElementsByName('title');
-for (let i = 0; i < radios.length; i++) {
-    if (!radios[i].checked) {
-      alert ('please')     
-    }
-}
-}
-
-const validateCheckbox = () => {
-  const checkboxes = document.getElementsByName('flavour');
-  for (let i = 0; i < checkboxes.length; i++) {
-      if (!checkboxes[i].checked) {
-        alert ('please select at least one')     
-      }
-  }
-}
-
 //VALIDATE FORM INPUTS
 const validateInput = () => {
   const emailInput = email.value.trim();
   const selectOption = options.value;
 
-
-//Validate Radio-Buttons
-validateRadioBtn()
-
-//Validate Checkboxes
-validateCheckbox()
 
 //Validate Select
   if (selectOption === "")
